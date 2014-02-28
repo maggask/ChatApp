@@ -1,0 +1,119 @@
+header {
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#979998),
+		color-stop(0.25, #ffffff),
+		to(#1F1F1F));
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(18,7,18,1);
+	padding:5px;
+	text-align:center;
+	color:#1c071b;
+	font-family: Arial, Helvetica, sans-serif;
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,1);
+}
+body {
+	color:#1c071b;
+	background-color: #B9BDB7;
+}
+button {
+	margin-top: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #1c071b;
+	padding: 5px 10px;
+	background: -moz-linear-gradient(
+		top,
+		#78075e 0%,
+		#ffffff 35%,
+		#821682);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#979998),
+		color-stop(0.35, #ffffff),
+		to(#1F1F1F));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 0px solid #523f4e;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(18,7,18,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(18,7,18,1);
+	box-shadow:
+		1px 2px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 3px rgba(18,7,18,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,1);
+}
+ul {
+	list-style-type: none;
+	padding-left: 0px;
+}
+h2 {
+	font-size: 20px;
+}
+#login, #roomlist {
+	position: absolute;
+	top: 30%;
+	left: 40%;
+	padding: 20px;
+	border: 1px solid #523f4e;
+	border-radius: 10px;
+	box-shadow: 10px 10px 5px #888888;
+	background-color: #D0D1CF;
+}
+#roomlist {
+	position: absolute;	
+	text-align:center;
+}
+#messages, #users, #enter, #directions, #pm, #pmInput {
+	border: 1px solid #523f4e;
+	border-radius: 10px;
+	box-shadow: 10px 10px 5px #888888;
+	background-color: #D0D1CF;
+	margin-top: 2px;
+	margin-bottom: 10px;
+}
+#messages, #users, #pm {
+	padding: 10px;
+	overflow-y: auto;
+}
+#users, #pm {
+	text-align: center;
+	margin-left: 1%;
+	width: 24%;
+}
+#messages {
+	height: 300px;
+}
+#users {
+	height: 100px;
+}
+#pm {
+	height: 190px;
+	float: right;
+}
+#enter {
+	width: 75%;
+}
+#pmInput {
+	float: right;
+	width: 24%;
+	margin-right: -25%;
+	margin-top: 200px;
+}
+#directions {
+	width: 24%;
+	padding: 20px;
+	text-align: center;
+	float: right;
+}
+
+

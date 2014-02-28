@@ -1,0 +1,10 @@
+<div id="roomlist">
+	<h2>List of all rooms available</h2>
+	<ul>
+		<li ng-repeat="room in roomlist"><button ng-click="enter(room)">{{ room }}</button></li>
+	</ul>
+
+	<input ng-model="roomname" placeholder="Insert roomname here" ng-keypress="keyPress($event)"/>
+	<button ng-click="create()">Create room!</button>
+	<p ng-bind="message"></p>
+</div>

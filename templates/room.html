@@ -1,0 +1,48 @@
+<div class="container">
+	<h2>Welcome to {{ roomName }}</h2>
+	<div id="messages" class="col-md-9 col-xs-9">
+		<ul style="list-style: none">
+			<li ng-repeat="message in messages">
+				<span>
+					<strong>[{{ message.timestamp | date:"HH:mm:ss" }}]:</strong>
+					<strong>
+						{{ message.nick }}
+					</strong>
+					{{ message.message }}
+				</span>
+			</li>
+		</ul>
+	</div>
+	<div id="users" class="col-md-3 col-xs-3">
+		<ul>
+			<li ng-repeat="user in users">
+				<a ng-hide="isMe(user)" ng-click="sendPm(user)"><strong>{{ user }}</strong></a>
+				<strong ng-show="isMe(user)">{{ user }}</strong>
+			</li>
+		</ul>
+	</div>
+	<div id="pm">
+		<strong>Private messages</strong>
+		<ul style="list-style: none">
+			<li ng-repeat="pmMessage in pmMessages">
+				<span>
+					
+					<strong>
+						{{ pmMessage.Sender }}
+					</strong>
+					{{ pmMessage.Message }}
+				</span>
+			</li>
+		</ul>
+	</div>
+	<input ng-model="privateMessage" id="pmInput" class="form-control" ng-keypress="keyPress($event, pmInput)" placeholder="Enter private message here" />
+	<input ng-model="currentMessage" id="enter" class="form-control" ng-keypress="keyPress($event, currentMessage)" />
+	<button ng-click="send()">Send!</button>
+	<button ng-click="quit(user, roomName)">Leave room!</button>
+	<div id="directions">
+		<p>To kick user enter /Kick user</p>
+		<p>To ban user enter /Ban user</p>
+		<p>Only ops have permission to ban or kick users</p>
+		<p>To send a private message, write it in the private message textbox and then click the user you want to send to</p>
+	</div>	
+</div>
